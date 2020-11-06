@@ -1,0 +1,70 @@
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 142, 255, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #fff;
+  transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
+
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.big-center-thing {
+  background-image: url(https://storage0.dms.mpinteractiv.ro/media/1/1481/21448/13569059/1/7138554-mediafax-foto-bogdan-maran.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 0 60%;
+}
+
+.bg-light-op6 {
+  background-color: rgba(248, 249, 250, 0.8) !important;
+}
