@@ -10,11 +10,6 @@ db.init_app(app)
 def index():
     return render_template('index.html')
 
-@app.route('/hello/')
-@app.route('/hello/<name>')
-def hello(name=None):
-    return str(db.query("SELECT * FROM Elections"))
-
 def render_candidates(names, election_id, institution_id, region_id):
     candidates = db.query('''
         SELECT 
